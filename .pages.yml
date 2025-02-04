@@ -3,11 +3,11 @@ media:
   output: /content/post
   categories: [image]
 content:
-  - name: posts
+  - name: blog
     format: toml-frontmatter
-    label: Posts
+    label: Blog
     type: collection
-    path: content/post
+    path: content/blog
     filename: index.md
     view:
       fields: [ title, date, draft ]
