@@ -1,0 +1,52 @@
+media:
+  input: content/post
+  output: /content/post
+  categories: [image]
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/post
+    filename: index.md
+    view:
+      fields: [ title, date, draft ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: draft, label: Draft, type: boolean, default: true }
+      - { name: slug, label: Slug, type: string, required: true }
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd'T'HH:mm:ss
+          time: true
+      - name: categories
+        label: Categories
+        type: select
+        list: true
+        options:
+          values:
+            - legal
+            - cases
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1
+          max: 5
+      - name: uploadimage
+        label: Uploadimage
+        type: object
+        list: true
+        fields:
+          - name: newimage
+            label: newimage
+            type: image
+            options:
+              input: content/post
+              output: content/post
+              categories: [image]
+      - { name: image, label: image, type: string, required: true }
+      - name: body
+        label: Body
+        type: rich-text
