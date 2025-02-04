@@ -1,0 +1,11 @@
+baseURL = 'website.com'
+languageCode = 'en-us'
+title = 'Hugo Site'
+
+theme = 'notrack'
+
+[params]
+author = 'Tester McTesterson'
+# optional, defaults to author:
+siteHeading = 'Testers Homepage'
+mainSections = ['blog']
