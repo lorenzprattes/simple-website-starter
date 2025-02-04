@@ -106,10 +106,10 @@ This could contain a short introduction of what is on the website or of
 yourself. Here is an example:
 
 ```markdown
-+++
+---
 date = '2024-11-10T16:46:03+02:00'
 title = ''
-+++
+---
 
 Welcome to my web page!
 ```
@@ -143,7 +143,7 @@ $ hugo new blog/_index.md
 And give it the following content:
 
 ```markdown
-+++
+---
 title = '<no need to change>'
 date = '<no need to change>'
 
@@ -151,7 +151,7 @@ date = '<no need to change>'
 identifier = 'blog'
 name = 'Blog'
 weight = 5
-+++
+---
 ```
 
 Under `[params]` in your `hugo.toml`, add:
