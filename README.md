@@ -1,4 +1,5 @@
 # Simple Website Starter
+This is a simple website starter, based on and including https://github.com/gevhaz/hugo-theme-notrack
 1. Create GitHub account if you dont already have one.
 2. Fork this repository 
 3. Create Cloudflare account if you dont already have one 
