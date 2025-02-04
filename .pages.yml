@@ -4,6 +4,7 @@ media:
   categories: [image]
 content:
   - name: posts
+    format: toml-frontmatter
     label: Posts
     type: collection
     path: content/post
